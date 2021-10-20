@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+
 import { AuthenticateUserServices } from "../services/AuthenticateUserServices";
 
 class AuthenticateUserController {
@@ -16,7 +17,7 @@ class AuthenticateUserController {
       return response.json({error: err.message});
     }
 
-  };
-};
+  }
+}
 
 export { AuthenticateUserController };
